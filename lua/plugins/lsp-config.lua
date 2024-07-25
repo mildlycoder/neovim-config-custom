@@ -8,6 +8,7 @@ return {
 				"tailwind-language-server",
 				"emmet-language-server",
 				"gopls",
+        "jedi-language-server"
 			},
 		},
 		config = function()
@@ -56,6 +57,10 @@ return {
 				capabilities = capabilities,
 			})
 			lspconfig.dartls.setup({
+				on_attach = on_attach,
+				capabilities = capabilities,
+			})
+      lspconfig.jedi_language_server.setup({
 				on_attach = on_attach,
 				capabilities = capabilities,
 			})
