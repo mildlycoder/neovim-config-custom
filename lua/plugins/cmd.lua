@@ -1,6 +1,6 @@
 return {
-  'VonHeikemen/fine-cmdline.nvim',
-  requires = {
-    {'MunifTanjim/nui.nvim'}
-  }
+	"VonHeikemen/fine-cmdline.nvim",
+	requires = {
+		{ "MunifTanjim/nui.nvim" },
+	},
 }
